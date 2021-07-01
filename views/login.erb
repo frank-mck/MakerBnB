@@ -1,37 +1,53 @@
+<head>
+  <link rel="icon" href="https://i.imgur.com/nDkbAZs.png">
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,700;1,200;1,300;1,400;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+ 
+<!--  Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+   <!-- CSS file -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
 <body>
+<div class="container">
+<nav class="navbar ">
+  <div class="container">
+    <a class="navbar-brand mb-0 h1" href="/">
+    
+      <img src="https://i.imgur.com/IdpwQZw.png" alt="MakersBnB" width="30" height="24">
+    </a>
+     
+  </div>
+</nav>
+<center>
 
 <h1>Welcome back!</h1>
 <h2>Please fill in your details below:</h2>
 
 <form action="/confirm" method="post">
-<input type="email" name="email" placeholder="Email" />
-<input type="password" name="password" placeholder="Password" />
-<input type="submit" value="Login" />
+
+  <div class="col-md-4">
+        <label for="validationDefault01" class="form-label">Email</label>
+        <input class="form-control" id="validationDefault01" required type="email" name="email" placeholder="Your email" />
+      </div>
+
+
+<div class="col-md-4">
+        <label for="validationDefault01" class="form-label">Password</label>
+        <input class="form-control" id="validationDefault01"  required type="password" name="password" placeholder="Choose a Password" />
+      </div>
+
+
+<input class="btn btn-lg" type="submit" value="Login" />
 </form>
 
 </body>
 
-<style>
 
-  body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background-color: #ddd;
-  }
-
-  form {
-    display: flex;
-    flex-direction: column;
-  }
-
-  input {
-    padding: 10px;
-    border: none;
-    margin: 5px;
-    border-radius: 5px;
-    width: 240px;
-  }
-
-</style>
+</center>

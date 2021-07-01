@@ -1,41 +1,130 @@
+<head>
+  <link rel="icon" href="https://i.imgur.com/nDkbAZs.png">
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,700;1,200;1,300;1,400;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+ 
+<!--  Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+   <!-- CSS file -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
 <body>
+<nav class="navbar ">
+    <div class="container">
+      <a class="navbar-brand" href="/">
+        <img src="https://i.imgur.com/IdpwQZw.png" alt="MakersBnB" width="30" height="24">
+      </a>
+    </div>
+  </nav>
+<div class="container">
+ <div class="modal-body row">
+ 
+ <!-- NavBar -->
+  
 
-<h1>Welcome to your next destination!</h1>
 
-<form action="/successful" method="post">
-<input type="text" name="name" placeholder="Name" />
-<input type="email" name="email" placeholder="Email" />
-<input type="password" name="password" placeholder="Password" />
-<input type="password" name="confirm_password" placeholder="Confirm Password" />
-<input type="submit" value="Sign up" />
-</form>
+    <h1>Welcome to your next destination!</h1>
 
-<h2>Already a user? <a href="/login">Click here</a></h2>
+    <!--  Photo slide -->
+ <div class="col-md-6">
+      <div class="photo-slide">
+          <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://loveincorporated.blob.core.windows.net/contentimages/fullsize/3b75fe9d-34a1-45cd-aa07-e7ed7e1bfbee-rio-de-janeiro-full-guide-lead.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="https://www.history.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTYyNDg1MjE3MTI1Mjc5Mzk4/topic-london-gettyimages-760251843-promo.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="https://lp-cms-production.imgix.net/image_browser/Effiel%20Tower%20-%20Paris%20Highlights.jpg?auto=format&fit=crop&sharp=10&vib=20&ixlib=react-8.6.4&w=850" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+      
+      
+      </div>
+ </div>
 
+
+
+
+
+  <!-- Sign Up form -->
+    <div class="col-md-6">
+     <div class="signup">
+       <form class="needs-validation" novalidate action="/successful" method="post">
+    <div class="col-12">
+      <div class="col-md-6">
+          <label for="validationDefault01" class="form-label">Name</label>
+          <input class="form-control" id="validationDefault01" required type="text" name="name" placeholder="Your Name" />
+        </div>
+      
+        <div class="col-md-6">
+          <label for="validationDefault01" class="form-label">Email</label>
+          <input class="form-control" id="validationDefault01" required type="email" name="email" placeholder="Your email" />
+        </div>
+
+
+        <div class="col-md-6">
+          <label for="validationDefault01" class="form-label">Password</label>
+          <input class="form-control" id="validationDefault01"  required type="password" name="password" placeholder="Choose a Password" />
+        </div>
+
+        <div class="col-md-6">
+          <label for="validationDefault01" class="form-label"> Confirm Password</label>
+            <input class="form-control" id="validationDefault01"  required type="password" name="confirm_password" placeholder="Confirm your Password" />
+        </div>
+
+        <div class="col-4">
+          <button type="submit" class="btn btn-lg">Sign in</button>
+        </div>
+
+      </div>
+ 
+
+      <h4>Already a user? <a href="/login">Click here</a></h4>
+    </form>
+  </div>
+     
+     </div>
+    
+    
+    
+    </div>
+
+ 
+ 
+
+  <!-- JS for Bootstrap -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </div> 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ </div>
 </body>
-
-<style>
-
-  body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background-color: white;
-  }
-
-  form {
-    display: flex;
-    flex-direction: column;
-  }
-
-  input {
-    padding: 10px;
-    border: none;
-    margin: 5px;
-    border-radius: 5px;
-    width: 240px;
-    background-color: #f2f2f2;
-  }
-
 
