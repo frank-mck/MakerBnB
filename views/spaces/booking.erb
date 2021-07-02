@@ -11,23 +11,29 @@
 </div>
 </div>
 
-<form action ='' method ='post' >
+
+
+<form action ='/spaces/id:/booking/confirm' method ='post' >
     <input class ='date' type ='date' name ='start_date' required>
     <input class ='date' type ='date' name ='finish_date' required>
-    <select>
+    <select name ='nights'>
       <option value = 0>How many nights</option>
-      <option value = 1>1</option>
-      <option value = 2>2</option>
-      <option value = 3>3</option>
-      <option value = 4>4</option>
+      <option value = 1 name="nights">1</option>
+      <option value = 2 name="nights">2</option>
+      <option value = 3 name="nights">3</option>
+      <option value = 4 name="nights">4</option>
       </select>
-    <button type ='submit' name ='available' value ='Book now'>Book now</button>
+    <button type ='submit' name ='available' value ='<%= @booking.id%>'>Book now</button>
   </form>
 
   <div>
   <p class ='back'><a href ='/spaces'><< Changed your mind?</a></p>
 </div>
 
+<% if params[:available] %>
+  <%= @nights %>
+  <%= @id.guest_name %>
+<% end %>
 
   <style>
   @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,900&display=swap');
